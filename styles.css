@@ -1,0 +1,141 @@
+body{
+    background-color: white;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#date-preferred{
+    font-weight: 50;
+    font-size: 12px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 5px;
+}
+
+.headers{
+   grid-column: 1 / span 2; 
+    grid-row: 1;
+    padding: 15px;
+}
+h2{
+    margin: 0px;
+}
+
+p{
+    font-size: small;
+    margin: 0px;
+    font-weight: 100;
+}
+
+.currency-to-convert{
+    grid-column: 1;
+    grid-row: 2;
+    padding: 20px;
+
+}
+
+.converted-currency{
+    grid-column: 2;
+    grid-row: 2;
+    padding: 20px;
+    
+}
+
+.converted-currency, .currency-to-convert, .converted-amount, .amount{
+    border-bottom: 1px solid black;
+}
+
+select,button{
+    width: 100%; 
+  /* padding: 20px; */
+  font-size: 1em;
+  font-weight: bold;
+  border: 0px;
+  background-color: white;
+  /* appearance: none; */
+}
+
+select {
+  /* appearance: none; */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  background-color: #f9f9f9;
+}
+
+select option {
+  padding: 10px;
+}
+
+
+button{
+    padding: 0px;
+}
+
+.amount{
+    grid-column: 1;
+    grid-row: 3;
+    padding: 20px;
+}
+
+.converted-amount{
+    grid-column: 2;
+    grid-row: 3;
+    padding: 20px;
+}
+
+ input{ 
+    width: 100%;
+    border: 100px; 
+    font-size: 70px; 
+    box-sizing: border-box; 
+}
+
+.chart-container {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+}
+
+#currencyChart {
+    margin-top: 30px;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+}
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+/*
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .currency-to-convert, .converted-currency {
+        grid-column: 1;
+    }
+    .converted-currency {
+        grid-row: 3;
+    }
+} */

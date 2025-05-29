@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/@githubnext/mona-sans@latest/dist/mona-sans.css">
+    
+</head>
+<body>
+    <div class="grid-container">
+        <div class="headers">
+            <h2>Currency Converter</h2>
+            <p id="date-preferred"></p>
+        </div>
+
+        <div class="currency-to-convert">
+            <p>From</p>
+            <button id="currency-to-convert-btn">
+                <select id="currency-to-convert-list">
+                </select>
+            </button>
+        </div>
+ 
+        <div class="converted-currency">
+            <p>To</p>
+            <button id="converted-currency-btn">
+                <select id="converted-currency-list">
+                </select>
+            </button>
+        </div>
+
+        <div class="amount">
+            <input type="text" placeholder="0.0">
+        </div>
+
+        <div class="converted-amount">
+            <input type="text" placeholder="0.0">
+        </div>
+
+        <div class="chart-container">
+            <canvas id="currencyChart"></canvas>
+        </div>
+        
+    </div>
+    
+
+<script src="codes.js"></script>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
